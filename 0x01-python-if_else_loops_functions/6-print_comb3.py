@@ -1,7 +1,6 @@
 #!/usr/bin/python3
-for a in range(0, 10):
-    for b in range((a+1), 10):
-        if (a != 8) or (b != 9):
-            print("{}{}, ".format(a, b), end="")
-        else:
-            print("{}{}".format(a, b))
+for i in range(9):
+    for a in range(i + 1, 10):
+        if i != 8 or a != 9:
+            print("{:n}{:n}".format(i, a), end=", ")
+print("{:n}{:n}".format(i, a))
